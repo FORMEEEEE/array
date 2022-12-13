@@ -112,7 +112,7 @@ public class PracticeService {
 				count++;
 			}
 		}if(count > 0) {
-			System.out.print(st + "에" + select + "가 존재하는 위치(인덱스 : )" + num);
+			System.out.print(st + "에" + select + "가 존재하는 위치(인덱스) : " + num);
 			System.out.print(select + "개수 : " + count);
 		}
 		
