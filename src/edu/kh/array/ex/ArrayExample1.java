@@ -7,9 +7,48 @@ public class ArrayExample1 {
 
 	Scanner sc = new Scanner(System.in);
 	/* 배열(array)
-	 * - 같은 자료형의 변수를 하나의 묶음으로 다루는 것.(자료구조)
+	 * - 같은 자료형의 변수를 하나의 묶음으로 다루는 것.(자료구조) *중요
 	 * - 묶여진 변수들은 하나의 배열명으로 불려지고 구분은 index를 이용함
 	 *  (index는 0부터 시작하는 정수)
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 배열 특징<외워>
+	 *  <정의> *중요
+		같은 자료형의 변수를 하나의 묶음으로 다루는것
+
+		1.한 가지 자료형만 저장가능
+		
+		2. 여러 값 저장가능
+		
+		3. 한번 크기를 지정하면 변경 불가능
+
+=============
+
+배열 선언과 할당
+
+변수 : 메모리에 값을 저장할 수 있는공간
+
+변수선언 : 메모리에 값을 저장할 수 있는 공간을 할당
+
+**배열
+*변수와 조금 의미가 다름
+배열 선언 : 메모리에 배열을 참조하는 변수 공간 할당
+(값 직접 저장x, 배열의 주소를 저장)
+
+배열할당 : 실제 값을 저장할 수 있는 배열을 메모리에 생성
+
+**Heap 영역에 할당된 공간은 절대 비어있을 수 없다
+최초 할당 시 jvm 기본값이 자동 저장된다(컴파일러)
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
 	 * 
 	 * 
 	 * */
@@ -256,6 +295,56 @@ public class ArrayExample1 {
 		}
 		
 	}
+	
+	public void ex8() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("문자열 입력 : ");
+		String name = sc.nextLine();
+		// 1.문자열을 입력 받아 한 글자씩 잘라내어 char 배열에 순서대로 저장
+		char[] arr = new char[name.length()]; //공간 생성
+		// 공간 만들떄 출력할 거 생각해서 넣어라 
+		for(int b = 0;  b < arr.length; b++) { // <= (X)  < (o) 만써 
+			arr[b] = name.charAt(b);
+		}	// 2. 문자 하나를 입력 받아 일치하는 문자가 char 배열에 몇개 존재하는지 확인
+			System.out.print("검색할 문자 입력 : ");
+			char ch = sc.nextLine().charAt(0); // char = sc.nextline이라는 연결어가 없음 
+			//그래서 string으로 받아오고 뒤에.charat를 써서 한 글자만 받아오겠다는뜻
+					//string.charat(0) : 문자열 제일 앞 문자 (1) 이면 두번째 ......
+			int count = 0;
+			
+			for(int a = 0; a < arr.length; a++) {
+				if(arr[a]  == ch) {
+					count++;
+				}
+			}
+			
+			if(count > 0 ) {
+				System.out.println(count + "개 있음");
+			}else {
+				System.out.println("존재하지 않음");
+			}
+			
+	}
+	
+	public void ex9() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	public void ex10() {
+		
+		
+	}
+	
 	
 	
 }
