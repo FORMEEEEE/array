@@ -6,7 +6,7 @@ public class ArrayRun2 {
 		
 		ArrayExample2 ar2 = new ArrayExample2();
 		
-		ar2.createLottoNumber();
+		//ar2.createLottoNumber();
 	}
 
 }
