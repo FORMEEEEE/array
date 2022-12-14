@@ -5,8 +5,11 @@ public class PracticeRun {
 	public static void main(String[] args) {
 
 		PracticeService pr = new PracticeService();
+		Repractice re = new Repractice();
 		
-		pr.practice5();
+		//pr.practice13(); 
+		re.ex6();
+	
 	}
 
 }

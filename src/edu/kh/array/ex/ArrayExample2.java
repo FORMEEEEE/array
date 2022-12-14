@@ -1,6 +1,7 @@
 package edu.kh.array.ex;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ArrayExample2 {
 
@@ -118,7 +119,6 @@ public class ArrayExample2 {
 		// > 자바가 정렬 방법을 미리 만들어서 제공하고있음
 		// Arrays.sort(배열명) : 배열 내 값들이 오름차순으로 정렬됨
 		// 시간복잡도, 효율 면접에서 질문할수도있으니 공부해라
-		
 		Arrays.sort(lotto);
 		System.out.println(Arrays.toString(lotto));
 		
